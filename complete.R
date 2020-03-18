@@ -23,6 +23,7 @@ complete <- function(directory , id = c(2,4) ){
     # data_analysis[ID %in% id,]
     data_analysis <- data.table(na.omit(data_analysis))
     final <- data_analysis[ ,.( nobs = table(data_analysis$ID))]
+    # dodano nazwy kolumn
     final <- final[,.(id = nobs.V1, nobs = nobs.N )]
     
     return(final)
