@@ -2,7 +2,6 @@ source("complete.R")
 complete("specdata", 1) # expected  1  117
 
 complete("specdata", c(2, 4, 8, 10, 12))
-complete("specdata", c(4))
 # expected
 ##   id nobs
 ## 1  2 1041
